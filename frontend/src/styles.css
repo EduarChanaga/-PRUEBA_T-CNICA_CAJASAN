@@ -1,0 +1,121 @@
+.container {
+    display: flex;
+    height: 100vh;
+  }
+  
+  .users-section {
+    width: 70%;
+    padding: 20px;
+    overflow-y: auto;
+    background: #f4f4f4;
+  }
+  
+  .add-user-section {
+    width: 30%;
+    padding: 20px;
+    background: #ddd;
+    border-left: 2px solid #ccc;
+    overflow-y: auto;
+  }
+  
+  .search-box {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .user-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px;
+  }
+  
+  .user-card {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  .user-card img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+  }
+  
+  button {
+    margin-top: 5px;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button.delete {
+    background: red;
+    color: white;
+  }
+  
+  button.add {
+    background: green;
+    color: white;
+  }
+  
+  .notification {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    z-index: 1000;
+  }
+  
+  .notification.success {
+    background-color: green;
+  }
+  
+  .notification.error {
+    background-color: red;
+  }
+  
+
+  /* Asegúrate de que el formulario sea visible */
+.address-form {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    width: 400px;
+    max-width: 100%;
+  }
+  
+  .address-form label {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  .address-form input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+  }
+  
+  .address-form button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .address-form button[type="button"] {
+    background-color: #dc3545;
+  }
+  
